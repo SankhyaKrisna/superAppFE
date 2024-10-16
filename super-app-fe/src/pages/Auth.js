@@ -35,12 +35,15 @@ const Auth = () => {
     
 
     return (
-        <div className="flex min-h-screen bg-gradient-to-r from-cyan-300 to-indigo-900">
+        <div className="flex min-h-screen background">
+            <div className="overlay"></div>
             <div className="flex-1 flex items-center justify-center relative">
                 <div className="circle"></div>
-                <h1 className="text-4xl font-bold text-white animate-fadeIn font-poppins z-10">Welcome to your daily app</h1>
+                <div className="circle"></div>
+                <h1 className="text-8xl font-bold text-white animate-fadeIn font-poppins z-10 text-shad">Welcome</h1>
+                <h1 className="text-4xl font-bold text-white animate-fadeIn font-poppins mt-10 p-6 z-10">to your daily app</h1>
             </div>
-            <div className="flex-1 flex items-center justify-center">
+            <div className="flex-1 flex items-center justify-center z-10">
                 <form 
                     onSubmit={handleSubmit} 
                     className="bg-white p-12 rounded-lg shadow-2xl w-95 transition-transform transform hover:scale-105"

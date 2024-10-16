@@ -6,13 +6,29 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.background {
+  background-image: url('../public/bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
 .circle {
     position: absolute;
     border: 8px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    width: 90px;
+    width: 290px;
     height: 90px;
-    top: 575px;
+    top: 475px;
     animation: rotate 4s linear infinite;
     transform: translateX(-50%);
     pointer-events: none;
