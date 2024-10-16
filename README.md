@@ -1,2 +1,0 @@
-# superAppFE
-Super App
